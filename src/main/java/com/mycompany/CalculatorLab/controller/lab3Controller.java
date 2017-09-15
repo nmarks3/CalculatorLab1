@@ -73,14 +73,12 @@ public class lab3Controller extends HttpServlet {
                 recArea = ls.calculateAreaRectangle(length, width);
                 request.setAttribute("recResult", "The Area of the Rectangle is:");
                 request.setAttribute("recMsg", recArea);
-                out.println("RECTANGLE");
 
             } else if (calcType.equals(CIRCLE)) {
 
                 cirArea = ls.calculateAreaCircle(radius);
                 request.setAttribute("cirResult", "The Area of the Circle is:");
                 request.setAttribute("cirMsg", cirArea);
-                out.println("CIRCLE");
 
             } else if (calcType.equals(TRIANGLE)) {
 
